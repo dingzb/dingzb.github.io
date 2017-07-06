@@ -2,10 +2,8 @@
 
 
 
-  
 
-
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next mist" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -95,12 +93,12 @@
 
 <meta name="description" content="想那么多，干嘛！">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Dingzb&#39;s Note">
+<meta property="og:title" content="iDiary">
 <meta property="og:url" content="http://dingzb.github.io/index.html">
-<meta property="og:site_name" content="Dingzb&#39;s Note">
+<meta property="og:site_name" content="iDiary">
 <meta property="og:description" content="想那么多，干嘛！">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Dingzb&#39;s Note">
+<meta name="twitter:title" content="iDiary">
 <meta name="twitter:description" content="想那么多，干嘛！">
 
 
@@ -110,9 +108,9 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    sidebar: {"display":"always","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
-    motion: true,
+    motion: false,
     duoshuo: {
       userId: '0',
       author: '博主'
@@ -135,7 +133,7 @@
 
 
 
-  <title>Dingzb's Note</title>
+  <title>iDiary</title>
   
 
 
@@ -157,10 +155,8 @@
 
   
   
-    
-  
 
-  <div class="container sidebar-position-left 
+  <div class="container  
    page-home 
  ">
     <div class="headband"></div>
@@ -173,7 +169,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Dingzb's Note</span>
+        <span class="site-title">iDiary</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -208,18 +204,8 @@
         </li>
       
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+          <a href="/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -229,21 +215,11 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+          <a href="/tags/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-lucky">
-          <a href="/lucky" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
-            
-            幸运
           </a>
         </li>
       
@@ -276,7 +252,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://dingzb.github.io/2017/07/04/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://dingzb.github.io/2017/07/06/idea-luanma/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Dingzb">
@@ -285,7 +261,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dingzb's Note">
+      <meta itemprop="name" content="iDiary">
     </span>
 
     
@@ -295,7 +271,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/07/04/hello-world/" itemprop="url">Hello World</a></h1>
+                <a class="post-title-link" href="/2017/07/06/idea-luanma/" itemprop="url">IDEA Ubuntu 中文环境下乱码</a></h1>
         
 
         <div class="post-meta">
@@ -307,150 +283,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-04T17:05:42+08:00">
-                2017-07-04
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Testing/" itemprop="url" rel="index">
-                    <span itemprop="name">Testing</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://dingzb.github.io/2017/07/04/tagTest/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Dingzb">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dingzb's Note">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/04/tagTest/" itemprop="url">tagTest</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-04T14:55:14+08:00">
-                2017-07-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-06T11:40:38+08:00">
+                2017-07-06
               </time>
             
 
@@ -483,8 +317,19 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/Spring/" itemprop="url" rel="index">
-                    <span itemprop="name">Spring</span>
+                  <a href="/categories/Java/Tools/" itemprop="url" rel="index">
+                    <span itemprop="name">Tools</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/Tools/IDEA/" itemprop="url" rel="index">
+                    <span itemprop="name">IDEA</span>
                   </a>
                 </span>
 
@@ -519,11 +364,10 @@
       
         
           
-            <h2 id="Spring4-配置"><a href="#Spring4-配置" class="headerlink" title="Spring4 配置"></a>Spring4 配置</h2><ul>
-<li>Web应用配置</li>
-<li>Spring-MVC配置</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</div><div class="line">	<span class="keyword">private</span> String name;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+            <h2 id="IDEA-Ubuntu-乱码"><a href="#IDEA-Ubuntu-乱码" class="headerlink" title="IDEA Ubuntu 乱码"></a>IDEA Ubuntu 乱码</h2><p><em>引用地址 <a href="http://blog.csdn.net/u013361445/article/details/51113692" target="_blank" rel="external">http://blog.csdn.net/u013361445/article/details/51113692</a></em><br>IDEA有分很多种乱码，菜单栏乱码，console输出中文乱码，代码乱码等等，以下提供一些解决方案。</p>
+<h3 id="设置里面的快捷键设置keymap出现中文，或者中文乱码"><a href="#设置里面的快捷键设置keymap出现中文，或者中文乱码" class="headerlink" title="设置里面的快捷键设置keymap出现中文，或者中文乱码"></a>设置里面的快捷键设置keymap出现中文，或者中文乱码</h3><p><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20160410165135202.png" alt=""><br><strong>原因：</strong><br>IDEA里面的jdk选择的是本地的JDK，而JDK1.5以上的版本是由多国语言的，会选择操作系统的本地语言，所以编译的提示就会变成中文。<br><strong>解决方案</strong><br>在 <code>IntelliJ IDEA 2016.1\bin\idea64.exe.vmoptions</code> 或 <code>IntelliJ IDEA 2016.1\bin\idea.exe.vmoptions</code> （根据你使用的版本决定）添加如下内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">-Duser.country=EN</div><div class="line">-Duser.language=us</div></pre></td></tr></table></figure></p>
+<h3 id="Console-输出乱码"><a href="#Console-输出乱码" class="headerlink" title="Console 输出乱码"></a>Console 输出乱码</h3><p><strong>解决方案：</strong><br>在 <code>IntelliJ IDEA 2016.1\bin\idea64.exe.vmoptions</code> 或 <code>IntelliJ IDEA 2016.1\bin\idea.exe.vmoptions</code> 添加:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-Dfile.encoding=UTF-8</div></pre></td></tr></table></figure></p>
+<h3 id="菜单乱码"><a href="#菜单乱码" class="headerlink" title="菜单乱码"></a>菜单乱码</h3><p><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20160410165505735.png" alt=""><br><strong>原因:</strong><br>字体不支持中文的显示，在idea中，默认的是<code>ubuntu</code>字体，该字体并不支持中文显示，选择一个支持的字体 如<code>simsum</code><br><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20160410165510547.png" alt=""></p>
 
           
         
@@ -602,8 +446,8 @@
 
           
             <div class="site-state-item site-state-posts">
-              <a href="/archives">
-                <span class="site-state-item-count">2</span>
+              <a href="/archives/">
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -625,7 +469,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -658,7 +502,7 @@
           <div class="links-of-blogroll motion-element links-of-blogroll-inline">
             <div class="links-of-blogroll-title">
               <i class="fa  fa-fw fa-globe"></i>
-              Links
+              
             </div>
             <ul class="links-of-blogroll-list">
               
