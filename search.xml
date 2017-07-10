@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[IDEA Ubuntu 中文乱码]]></title>
     <url>%2F2017%2F07%2F06%2FIDEA-Ubuntu-%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%2F</url>
-    <content type="text"><![CDATA[引用地址 http://blog.csdn.net/u013361445/article/details/51113692 IDEA有分很多种乱码，菜单栏乱码，console输出中文乱码，代码乱码等等，以下提供一些解决方案。 设置里面的快捷键设置keymap出现中文，或者中文乱码原因：IDEA里面的jdk选择的是本地的JDK，而JDK1.5以上的版本是由多国语言的，会选择操作系统的本地语言，所以编译的提示就会变成中文。解决方案在 IntelliJ IDEA 2016.1\bin\idea64.exe.vmoptions 或 IntelliJ IDEA 2016.1\bin\idea.exe.vmoptions （根据你使用的版本决定）添加如下内容：12-Duser.country=EN-Duser.language=us Console 输出乱码解决方案：在 IntelliJ IDEA 2016.1\bin\idea64.exe.vmoptions 或 IntelliJ IDEA 2016.1\bin\idea.exe.vmoptions 添加:1-Dfile.encoding=UTF-8 菜单乱码原因:字体不支持中文的显示，在idea中，默认的是ubuntu字体，该字体并不支持中文显示，选择一个支持的字体 如simsum]]></content>
+    <content type="text"><![CDATA[IDEA有分很多种乱码，菜单栏乱码，console输出中文乱码，代码乱码等等，以下提供一些解决方案。 设置里面的快捷键设置keymap出现中文，或者中文乱码原因：IDEA里面的jdk选择的是本地的JDK，而JDK1.5以上的版本是由多国语言的，会选择操作系统的本地语言，所以编译的提示就会变成中文。解决方案在 IntelliJ IDEA 2016.1\bin\idea64.exe.vmoptions 或 IntelliJ IDEA 2016.1\bin\idea.exe.vmoptions （根据你使用的版本决定）添加如下内容：12-Duser.country=EN-Duser.language=us Console 输出乱码解决方案：在 IntelliJ IDEA 2016.1\bin\idea64.exe.vmoptions 或 IntelliJ IDEA 2016.1\bin\idea.exe.vmoptions 添加:1-Dfile.encoding=UTF-8 菜单乱码原因:字体不支持中文的显示，在idea中，默认的是ubuntu字体，该字体并不支持中文显示，选择一个支持的字体 如simsum 参考http://blog.csdn.net/u013361445/article/details/51113692]]></content>
       <categories>
         <category>Java</category>
         <category>Tools</category>
