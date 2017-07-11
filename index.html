@@ -306,6 +306,189 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://dingzb.github.io/2017/07/11/Hash-冲突处理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Dingzb">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iDiary">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/07/11/Hash-冲突处理/" itemprop="url">Hash 冲突处理</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-11T11:23:43+08:00">
+                2017-07-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据结构/" itemprop="url" rel="index">
+                    <span itemprop="name">数据结构</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据结构/HashTable/" itemprop="url" rel="index">
+                    <span itemprop="name">HashTable</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据结构/HashTable/冲突处理/" itemprop="url" rel="index">
+                    <span itemprop="name">冲突处理</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="什么是哈希表"><a href="#什么是哈希表" class="headerlink" title="什么是哈希表"></a>什么是哈希表</h2><blockquote>
+<p><em>严蔚敏 《数据结构（C语言版）》 截图</em></p>
+<p><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/hash-0.png" alt=""></p>
+</blockquote>
+<p>哈希表就是依据 <strong>关键字可以根据一定的算法（哈希函数）映射到表中的特定位置</strong> 的思想建立的表。<br>因此哈希表最大的特点就是可以根据<code>f(K)</code>函数得到其在数组中的索引。</p>
+<h2 id="Hash-冲突"><a href="#Hash-冲突" class="headerlink" title="Hash 冲突"></a>Hash 冲突</h2><p>在计算hash地址的过程中会出现<strong>对于不同的关键字出现相同的哈希地址</strong>的情况，即<code>key1 ≠ key2</code>，但是<code>f(key1) = f(key2)</code>，这种情况就是<strong>Hash 冲突</strong>。具有相同关键字的<code>key1</code>和<code>key2</code>称之为<strong>同义词</strong>。<br>通过优化哈希函数可以减少这种冲突的情况（如：均衡哈希函数），但是在通用条件下，考虑到于表格的长度有限及关键值（数据）的无限，这种冲突是不可避免的，所以就需要处理冲突。</p>
+<h2 id="冲突处理"><a href="#冲突处理" class="headerlink" title="冲突处理"></a>冲突处理</h2><p>冲突处理分为以下四种方式：</p>
+<ol>
+<li>开放地址<ol>
+<li>线性探测再散列</li>
+<li>二次探测再散列</li>
+<li>伪随机探测再散列</li>
+</ol>
+</li>
+<li>再哈希</li>
+<li>链地址</li>
+<li>建立公共溢出区</li>
+</ol>
+<h3 id="开放地址"><a href="#开放地址" class="headerlink" title="开放地址"></a>开放地址</h3><p>开放地址法和再哈希法处理冲突的基本原则（<strong>除链地址方法除外</strong>）就是<strong>出现冲突后按照一定算法查找一个空位置存放</strong>。公式：<br><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/open-address.png" alt=""><br><code>Hi</code>为计算出的地址，<code>H(key)</code>为哈希函数，<code>di</code>为增量。其中<code>di</code>的三种获取方式既是上面提到的开放地址法的三种分类（线性探测再散列、二次探测再散列、伪随机探测再散列）。</p>
+<h4 id="线性探索再散列"><a href="#线性探索再散列" class="headerlink" title="线性探索再散列"></a>线性探索再散列</h4><p><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/%E7%BA%BF%E6%80%A7%E6%8E%A2%E7%B4%A2.png" alt=""><br>即依次向后查找。</p>
+<h4 id="二次探索再散列"><a href="#二次探索再散列" class="headerlink" title="二次探索再散列"></a>二次探索再散列</h4><p><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/%E4%BA%8C%E6%AC%A1%E6%8E%A2%E7%B4%A2.png" alt=""><br>即依次向前后查找，增量为1、2、3的二次方。</p>
+<h4 id="伪随机探测再散列"><a href="#伪随机探测再散列" class="headerlink" title="伪随机探测再散列"></a>伪随机探测再散列</h4><p>伪随机，顾名思义就是随机产生一个增量位移。</p>
+<h4 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h4><p>贴一个《数据结构》中的列子<br><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/example.png" alt=""></p>
+<h3 id="再哈希法"><a href="#再哈希法" class="headerlink" title="再哈希法"></a>再哈希法</h3><p>再哈希法，就是出现冲突后采用其他的哈希函数计算，直到不再冲突为止。<br><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/rehash.png" alt=""><br><code>RHi</code>为不同的哈希函数。</p>
+<h3 id="链地址法"><a href="#链地址法" class="headerlink" title="链地址法"></a>链地址法</h3><p>链接地址法不同与前两种方法，他是在出现冲突的地方存储一个链表，所有的同义词记录都存在其中。形象点说就行像是在出现冲突的地方直接把后续的值摞上去。</p>
+<h4 id="例子-1"><a href="#例子-1" class="headerlink" title="例子"></a>例子</h4><p><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/link.png" alt=""></p>
+<h3 id="建立公共溢出区"><a href="#建立公共溢出区" class="headerlink" title="建立公共溢出区"></a>建立公共溢出区</h3><p>大概的意思就是对冲突的关键字新建数组进行存储（不是很明确）。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这次的Hash冲突处理总结，是源于Java HashMap 源码的阅读，其就是采用了链地址的方式处理的冲突。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://dingzb.github.io/2017/07/06/IDEA-Ubuntu-中文乱码/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -503,7 +686,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -514,7 +697,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -525,7 +708,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -1063,6 +1246,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 
