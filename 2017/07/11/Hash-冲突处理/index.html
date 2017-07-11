@@ -105,7 +105,15 @@
 <meta property="og:image" content="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/example.png">
 <meta property="og:image" content="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/rehash.png">
 <meta property="og:image" content="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/link.png">
-<meta property="og:updated_time" content="2017-07-11T08:01:47.817Z">
+<meta property="og:image" content="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/hash-1.png">
+<meta property="og:image" content="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/hash-2.png">
+<meta property="og:image" content="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/hash-3.png">
+<meta property="og:image" content="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/hash-4.png">
+<meta property="og:image" content="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/hash-5.png">
+<meta property="og:image" content="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/hash-6.png">
+<meta property="og:image" content="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/hash-7.png">
+<meta property="og:image" content="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/hash-8.png">
+<meta property="og:updated_time" content="2017-07-11T08:12:35.862Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hash 冲突处理">
 <meta name="twitter:description" content="什么是哈希表 严蔚敏 《数据结构（C语言版）》 截图   哈希表就是依据 关键字可以根据一定的算法（哈希函数）映射到表中的特定位置 的思想建立的表。因此哈希表最大的特点就是可以根据f(K)函数得到其在数组中的索引。 Hash 冲突在计算hash地址的过程中会出现对于不同的关键字出现相同的哈希地址的情况，即key1 ≠ key2，但是f(key1) = f(key2)，这种情况就是Hash 冲突。具">
@@ -450,6 +458,8 @@
 <h4 id="例子-1"><a href="#例子-1" class="headerlink" title="例子"></a>例子</h4><p><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/link.png" alt=""></p>
 <h3 id="建立公共溢出区"><a href="#建立公共溢出区" class="headerlink" title="建立公共溢出区"></a>建立公共溢出区</h3><p>大概的意思就是对冲突的关键字新建数组进行存储（不是很明确）。</p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这次的Hash冲突处理总结，是源于Java HashMap 源码的阅读，其就是采用了链地址的方式处理的冲突。</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><em>《数据结构（C语言版）》 严蔚敏</em><br><em>一篇不错的博客 <a href="http://blog.csdn.net/qq_27093465/article/details/52269862" target="_blank" rel="external">http://blog.csdn.net/qq_27093465/article/details/52269862</a></em></p>
+<h2 id="附：《数据结构《C语言版）》-Hash表部分截图"><a href="#附：《数据结构《C语言版）》-Hash表部分截图" class="headerlink" title="附：《数据结构《C语言版）》 Hash表部分截图"></a>附：《数据结构《C语言版）》 Hash表部分截图</h2><p><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/hash-1.png" alt=""><br><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/hash-2.png" alt=""><br><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/hash-3.png" alt=""><br><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/hash-4.png" alt=""><br><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/hash-5.png" alt=""><br><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/hash-6.png" alt=""><br><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/hash-7.png" alt=""><br><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/hash-8.png" alt=""></p>
 
       
     </div>
@@ -679,7 +689,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是哈希表"><span class="nav-number">1.</span> <span class="nav-text">什么是哈希表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hash-冲突"><span class="nav-number">2.</span> <span class="nav-text">Hash 冲突</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#冲突处理"><span class="nav-number">3.</span> <span class="nav-text">冲突处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#开放地址"><span class="nav-number">3.1.</span> <span class="nav-text">开放地址</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#线性探索再散列"><span class="nav-number">3.1.1.</span> <span class="nav-text">线性探索再散列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二次探索再散列"><span class="nav-number">3.1.2.</span> <span class="nav-text">二次探索再散列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#伪随机探测再散列"><span class="nav-number">3.1.3.</span> <span class="nav-text">伪随机探测再散列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子"><span class="nav-number">3.1.4.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#再哈希法"><span class="nav-number">3.2.</span> <span class="nav-text">再哈希法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#链地址法"><span class="nav-number">3.3.</span> <span class="nav-text">链地址法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-1"><span class="nav-number">3.3.1.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#建立公共溢出区"><span class="nav-number">3.4.</span> <span class="nav-text">建立公共溢出区</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是哈希表"><span class="nav-number">1.</span> <span class="nav-text">什么是哈希表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hash-冲突"><span class="nav-number">2.</span> <span class="nav-text">Hash 冲突</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#冲突处理"><span class="nav-number">3.</span> <span class="nav-text">冲突处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#开放地址"><span class="nav-number">3.1.</span> <span class="nav-text">开放地址</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#线性探索再散列"><span class="nav-number">3.1.1.</span> <span class="nav-text">线性探索再散列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二次探索再散列"><span class="nav-number">3.1.2.</span> <span class="nav-text">二次探索再散列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#伪随机探测再散列"><span class="nav-number">3.1.3.</span> <span class="nav-text">伪随机探测再散列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子"><span class="nav-number">3.1.4.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#再哈希法"><span class="nav-number">3.2.</span> <span class="nav-text">再哈希法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#链地址法"><span class="nav-number">3.3.</span> <span class="nav-text">链地址法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-1"><span class="nav-number">3.3.1.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#建立公共溢出区"><span class="nav-number">3.4.</span> <span class="nav-text">建立公共溢出区</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">5.</span> <span class="nav-text">参考</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附：《数据结构《C语言版）》-Hash表部分截图"><span class="nav-number">6.</span> <span class="nav-text">附：《数据结构《C语言版）》 Hash表部分截图</span></a></li></ol></div>
             
 
           </div>
@@ -1173,28 +1183,6 @@
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  
-
 
   
 
