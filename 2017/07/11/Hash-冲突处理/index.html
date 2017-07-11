@@ -113,7 +113,7 @@
 <meta property="og:image" content="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/hash-6.png">
 <meta property="og:image" content="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/hash-7.png">
 <meta property="og:image" content="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/hash-8.png">
-<meta property="og:updated_time" content="2017-07-11T08:12:35.862Z">
+<meta property="og:updated_time" content="2017-07-11T08:13:41.215Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hash 冲突处理">
 <meta name="twitter:description" content="什么是哈希表 严蔚敏 《数据结构（C语言版）》 截图   哈希表就是依据 关键字可以根据一定的算法（哈希函数）映射到表中的特定位置 的思想建立的表。因此哈希表最大的特点就是可以根据f(K)函数得到其在数组中的索引。 Hash 冲突在计算hash地址的过程中会出现对于不同的关键字出现相同的哈希地址的情况，即key1 ≠ key2，但是f(key1) = f(key2)，这种情况就是Hash 冲突。具">
@@ -435,7 +435,7 @@
 <p><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/hash-0.png" alt=""></p>
 </blockquote>
 <p>哈希表就是依据 <strong>关键字可以根据一定的算法（哈希函数）映射到表中的特定位置</strong> 的思想建立的表。<br>因此哈希表最大的特点就是可以根据<code>f(K)</code>函数得到其在数组中的索引。</p>
-<h2 id="Hash-冲突"><a href="#Hash-冲突" class="headerlink" title="Hash 冲突"></a>Hash 冲突</h2><p>在计算hash地址的过程中会出现<strong>对于不同的关键字出现相同的哈希地址</strong>的情况，即<code>key1 ≠ key2</code>，但是<code>f(key1) = f(key2)</code>，这种情况就是<strong>Hash 冲突</strong>。具有相同关键字的<code>key1</code>和<code>key2</code>称之为<strong>同义词</strong>。<br>通过优化哈希函数可以减少这种冲突的情况（如：均衡哈希函数），但是在通用条件下，考虑到于表格的长度有限及关键值（数据）的无限，这种冲突是不可避免的，所以就需要处理冲突。</p>
+<h2 id="Hash-冲突"><a href="#Hash-冲突" class="headerlink" title="Hash 冲突"></a>Hash 冲突</h2><p>在计算hash地址的过程中会出现<strong>对于不同的关键字出现相同的哈希地址</strong>的情况，即<code>key1 ≠ key2</code>，但是<code>f(key1) = f(key2)</code>，这种情况就是<strong>Hash 冲突</strong>。具有相同关键字的<code>key1</code>和<code>key2</code>称之为<strong>同义词</strong>。<br>通过优化哈希函数可以减少这种冲突的情况（如：均衡哈希函数），但是在通用条件下，考虑到于表格的长度有限及关键值（数据）的无限，这种冲突是不可避免的，所以就需要处理冲突。<br><a id="more"></a></p>
 <h2 id="冲突处理"><a href="#冲突处理" class="headerlink" title="冲突处理"></a>冲突处理</h2><p>冲突处理分为以下四种方式：</p>
 <ol>
 <li>开放地址<ol>
