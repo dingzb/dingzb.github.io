@@ -422,7 +422,7 @@
 <p><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/hash-0.png" alt=""></p>
 </blockquote>
 <p>哈希表就是依据 <strong>关键字可以根据一定的算法（哈希函数）映射到表中的特定位置</strong> 的思想建立的表。<br>因此哈希表最大的特点就是可以根据<code>f(K)</code>函数得到其在数组中的索引。</p>
-<h2 id="Hash-冲突"><a href="#Hash-冲突" class="headerlink" title="Hash 冲突"></a>Hash 冲突</h2><p>在计算hash地址的过程中会出现<strong>对于不同的关键字出现相同的哈希地址</strong>的情况，即<code>key1 ≠ key2</code>，但是<code>f(key1) = f(key2)</code>，这种情况就是<strong>Hash 冲突</strong>。具有相同关键字的<code>key1</code>和<code>key2</code>称之为<strong>同义词</strong>。<br>通过优化哈希函数可以减少这种冲突的情况（如：均衡哈希函数），但是在通用条件下，考虑到于表格的长度有限及关键值（数据）的无限，这种冲突是不可避免的，所以就需要处理冲突。<br>
+<h2 id="Hash-冲突"><a href="#Hash-冲突" class="headerlink" title="Hash 冲突"></a>Hash 冲突</h2><p>在计算hash地址的过程中会出现<strong>对于不同的关键字出现相同的哈希地址</strong>的情况，即<code>key1 ≠ key2</code>，但是<code>f(key1) = f(key2)</code>，这种情况就是<strong>Hash 冲突</strong>。具有相同关键字的<code>key1</code>和<code>key2</code>称之为<strong>同义词</strong>。<br>通过优化哈希函数可以减少这种冲突的情况（如：均衡哈希函数），但是在通用条件下，考虑到于表格的长度有限及关键值（数据）的无限，这种冲突是不可避免的，所以就需要处理冲突。</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/07/11/Hash-冲突处理/#more" rel="contents">
