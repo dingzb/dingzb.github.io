@@ -105,7 +105,7 @@
 <meta property="og:image" content="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/example.png?x-oss-process=image/resize,m_lfit,w_800,limit_0/auto-orient,0/quality,q_50">
 <meta property="og:image" content="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/rehash.png?x-oss-process=image/resize,m_lfit,h_20,limit_0/auto-orient,0/quality,q_50">
 <meta property="og:image" content="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/link.png?x-oss-process=image/resize,m_lfit,w_800,limit_0/auto-orient,0/quality,q_50">
-<meta property="og:updated_time" content="2017-07-11T13:28:50.229Z">
+<meta property="og:updated_time" content="2017-07-11T13:35:03.551Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hash 冲突处理">
 <meta name="twitter:description" content="什么是哈希表 严蔚敏 《数据结构（C语言版）》 截图   哈希表就是依据 关键字可以根据一定的算法（哈希函数）映射到表中的特定位置 的思想建立的表。因此哈希表最大的特点就是可以根据f(K)函数得到其在数组中的索引。 Hash 冲突在计算hash地址的过程中会出现对于不同的关键字出现相同的哈希地址的情况，即key1 ≠ key2，但是f(key1) = f(key2)，这种情况就是Hash 冲突。具">
@@ -441,7 +441,7 @@
 <li>链地址</li>
 <li>建立公共溢出区</li>
 </ol>
-<h3 id="开放地址"><a href="#开放地址" class="headerlink" title="开放地址"></a>开放地址</h3><p>开放地址法处理冲突的基本原则（<strong>除链地址方法除外</strong>）就是<strong>出现冲突后按照一定算法查找一个空位置存放</strong>。公式：<br><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/open-address.png?x-oss-process=image/resize,m_lfit,h_20,limit_0/auto-orient,0/quality,q_50" alt=""><br><code>Hi</code>为计算出的地址，<code>H(key)</code>为哈希函数，<code>di</code>为增量。其中<code>di</code>的三种获取方式既是上面提到的开放地址法的三种分类（线性探测再散列、二次探测再散列、伪随机探测再散列）。</p>
+<h3 id="开放地址"><a href="#开放地址" class="headerlink" title="开放地址"></a>开放地址</h3><p>开放地址法处理冲突的基本原则就是<strong>出现冲突后按照一定算法查找一个空位置存放</strong>。公式：<br><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/open-address.png?x-oss-process=image/resize,m_lfit,h_20,limit_0/auto-orient,0/quality,q_50" alt=""><br><code>Hi</code>为计算出的地址，<code>H(key)</code>为哈希函数，<code>di</code>为增量。其中<code>di</code>的三种获取方式既是上面提到的开放地址法的三种分类（线性探测再散列、二次探测再散列、伪随机探测再散列）。</p>
 <h4 id="线性探索再散列"><a href="#线性探索再散列" class="headerlink" title="线性探索再散列"></a>线性探索再散列</h4><p><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/%E7%BA%BF%E6%80%A7%E6%8E%A2%E7%B4%A2.png?x-oss-process=image/resize,m_lfit,h_20,limit_0/auto-orient,0/quality,q_50" alt=""><br>即依次向后查找。</p>
 <h4 id="二次探索再散列"><a href="#二次探索再散列" class="headerlink" title="二次探索再散列"></a>二次探索再散列</h4><p><img src="http://idiary.oss-cn-zhangjiakou.aliyuncs.com/images/20170711--Hash-%E5%86%B2%E7%AA%81%E5%A4%84%E7%90%86/%E4%BA%8C%E6%AC%A1%E6%8E%A2%E7%B4%A2.png?x-oss-process=image/resize,m_lfit,h_20,limit_0/auto-orient,0/quality,q_50" alt=""><br>即依次向前后查找，增量为1、2、3的二次方。</p>
 <h4 id="伪随机探测再散列"><a href="#伪随机探测再散列" class="headerlink" title="伪随机探测再散列"></a>伪随机探测再散列</h4><p>伪随机，顾名思义就是随机产生一个增量位移。</p>
