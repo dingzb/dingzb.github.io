@@ -75,7 +75,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Java,HashMap,面试题," />
 
 
 
@@ -91,15 +91,17 @@
 
 
 
-<meta name="description" content="想那么多，干嘛！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="iDiary">
-<meta property="og:url" content="http://dingzb.github.io/categories/数据结构/HashTable/冲突处理/index.html">
+<meta name="description" content="“你知道HashMap的工作原理吗？” “你知道HashMap的get()方法的工作原理吗？”HashMap是基于hashing的原理，我们使用put(key, value)存储对象到HashMap中，使用get(key)从HashMap中获取对象。当我们给put()方法传递键和值时，我们先对键调用hashCode()方法，返回的hashCode用于找到bucket位置来储存Entry对象。”这里">
+<meta name="keywords" content="Java,HashMap,面试题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HashMap 面试题摘录">
+<meta property="og:url" content="http://dingzb.github.io/2017/07/12/HashMap-面试题摘录/index.html">
 <meta property="og:site_name" content="iDiary">
-<meta property="og:description" content="想那么多，干嘛！">
+<meta property="og:description" content="“你知道HashMap的工作原理吗？” “你知道HashMap的get()方法的工作原理吗？”HashMap是基于hashing的原理，我们使用put(key, value)存储对象到HashMap中，使用get(key)从HashMap中获取对象。当我们给put()方法传递键和值时，我们先对键调用hashCode()方法，返回的hashCode用于找到bucket位置来储存Entry对象。”这里">
+<meta property="og:updated_time" content="2017-07-16T07:44:04.914Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="iDiary">
-<meta name="twitter:description" content="想那么多，干嘛！">
+<meta name="twitter:title" content="HashMap 面试题摘录">
+<meta name="twitter:description" content="“你知道HashMap的工作原理吗？” “你知道HashMap的get()方法的工作原理吗？”HashMap是基于hashing的原理，我们使用put(key, value)存储对象到HashMap中，使用get(key)从HashMap中获取对象。当我们给put()方法传递键和值时，我们先对键调用hashCode()方法，返回的hashCode用于找到bucket位置来储存Entry对象。”这里">
 
 
 
@@ -127,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://dingzb.github.io/categories/数据结构/HashTable/冲突处理/"/>
+  <link rel="canonical" href="http://dingzb.github.io/2017/07/12/HashMap-面试题摘录/"/>
 
 
 
 
 
-  <title>分类: 冲突处理 | iDiary</title>
+  <title>HashMap 面试题摘录 | iDiary</title>
   
 
 
@@ -156,7 +158,7 @@
   
   
 
-  <div class="container   ">
+  <div class="container  page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -294,45 +296,230 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h1>冲突处理<small>分类</small>
-      </h1>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/07/11/Hash-冲突处理/" itemprop="url">
-              
-                <span itemprop="name">Hash 冲突处理</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-11T11:23:43+08:00"
-              content="2017-07-11" >
-          07-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://dingzb.github.io/2017/07/12/HashMap-面试题摘录/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Dingzb">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iDiary">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">HashMap 面试题摘录</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-12T15:14:47+08:00">
+                2017-07-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/面试题/" itemprop="url" rel="index">
+                    <span itemprop="name">面试题</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/面试题/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/面试题/Java/HashMap/" itemprop="url" rel="index">
+                    <span itemprop="name">HashMap</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h4 id="“你知道HashMap的工作原理吗？”-“你知道HashMap的get-方法的工作原理吗？”"><a href="#“你知道HashMap的工作原理吗？”-“你知道HashMap的get-方法的工作原理吗？”" class="headerlink" title="“你知道HashMap的工作原理吗？” “你知道HashMap的get()方法的工作原理吗？”"></a>“你知道HashMap的工作原理吗？” “你知道HashMap的get()方法的工作原理吗？”</h4><p>HashMap是基于hashing的原理，我们使用put(key, value)存储对象到HashMap中，使用get(key)从HashMap中获取对象。当我们给put()方法传递键和值时，我们先对键调用hashCode()方法，返回的hashCode用于找到bucket位置来储存Entry对象。”这里关键点在于指出，HashMap是在bucket中储存键对象和值对象，作为Map.Entry。</p>
+<h4 id="“当两个对象的hashcode相同会发生什么？”"><a href="#“当两个对象的hashcode相同会发生什么？”" class="headerlink" title="“当两个对象的hashcode相同会发生什么？”"></a>“当两个对象的hashcode相同会发生什么？”</h4><p>因为hashcode相同，所以它们的bucket位置相同，‘碰撞’会发生。因为HashMap使用LinkedList存储对象，这个Entry(包含有键值对的Map.Entry对象)会存储在LinkedList中（<strong>JDK1.8 中已经可以采用红黑树</strong>）。(当向 HashMap 中添加 key-value 对，由其 key 的 hashCode() 返回值决定该 key-value 对（就是 Entry 对象）的存储位置。当两个 Entry 对象的 key 的 hashCode() 返回值相同时，将由 key 通过 eqauls() 比较值决定是采用覆盖行为（返回 true），还是产生 Entry 链（返回 false）。)<br><a id="more"></a></p>
+<h4 id="“如果两个键的hashcode相同，你如何获取值对象？”"><a href="#“如果两个键的hashcode相同，你如何获取值对象？”" class="headerlink" title="“如果两个键的hashcode相同，你如何获取值对象？”"></a>“如果两个键的hashcode相同，你如何获取值对象？”</h4><p>当我们调用get()方法，HashMap会使用键对象的hashcode找到bucket位置，然后获取值对象。如果有两个值对象储存在同一个bucket，将会遍历LinkedList直到找到值对象。找到bucket位置之后，会调用keys.equals()方法去找到LinkedList中正确的节点，最终找到要找的值对象。(当程序通过 key 取出对应 value 时，系统只要先计算出该 key 的 hashCode() 返回值，在根据该 hashCode 返回值找出该 key 在 table 数组中的索引，然后取出该索引处的 Entry，最后返回该 key 对应的 value 即可。)  </p>
+<p>上面的描述（<strong><em>会调用keys.equals()方法去找到LinkedList中正确的节点</em></strong>），实际上在这之前还会通过<code>==</code>先进行判断。这里看源码(jdk 1.8)<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> V <span class="title">get</span><span class="params">(Object key)</span> </span>&#123;</div><div class="line">    Node&lt;K,V&gt; e;</div><div class="line">    <span class="keyword">return</span> (e = getNode(hash(key), key)) == <span class="keyword">null</span> ? <span class="keyword">null</span> : e.value;</div><div class="line">&#125;</div><div class="line"></div><div class="line">..........</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">final</span> Node&lt;K,V&gt; <span class="title">getNode</span><span class="params">(<span class="keyword">int</span> hash, Object key)</span> </span>&#123;</div><div class="line">    Node&lt;K,V&gt;[] tab; Node&lt;K,V&gt; first, e; <span class="keyword">int</span> n; K k;</div><div class="line">    <span class="keyword">if</span> ((tab = table) != <span class="keyword">null</span> &amp;&amp; (n = tab.length) &gt; <span class="number">0</span> &amp;&amp;</div><div class="line">        (first = tab[(n - <span class="number">1</span>) &amp; hash]) != <span class="keyword">null</span>) &#123;                                <span class="comment">//这里判断根据hash取到对象不为空</span></div><div class="line">        <span class="keyword">if</span> (first.hash == hash &amp;&amp; <span class="comment">// always check first node</span></div><div class="line">            ((k = first.key) == key || (key != <span class="keyword">null</span> &amp;&amp; key.equals(k))))         <span class="comment">//这里是本题的关键：当hash相等时先通过`==`判断是否为真，否则再通过`equals`判断</span></div><div class="line">            <span class="keyword">return</span> first;</div><div class="line">        <span class="keyword">if</span> ((e = first.next) != <span class="keyword">null</span>) &#123;</div><div class="line">            <span class="keyword">if</span> (first <span class="keyword">instanceof</span> TreeNode)</div><div class="line">                <span class="keyword">return</span> ((TreeNode&lt;K,V&gt;)first).getTreeNode(hash, key);</div><div class="line">            <span class="keyword">do</span> &#123;</div><div class="line">                <span class="keyword">if</span> (e.hash == hash &amp;&amp;</div><div class="line">                    ((k = e.key) == key || (key != <span class="keyword">null</span> &amp;&amp; key.equals(k))))</div><div class="line">                    <span class="keyword">return</span> e;</div><div class="line">            &#125; <span class="keyword">while</span> ((e = e.next) != <span class="keyword">null</span>);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">null</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h4 id="“如果HashMap的大小超过了负载因子-load-factor-定义的容量，怎么办？”"><a href="#“如果HashMap的大小超过了负载因子-load-factor-定义的容量，怎么办？”" class="headerlink" title="“如果HashMap的大小超过了负载因子(load factor)定义的容量，怎么办？”"></a>“如果HashMap的大小超过了负载因子(load factor)定义的容量，怎么办？”</h4><p>当一个map填满了75%的bucket时候，和其它集合类(如ArrayList等)一样，将会创建原来HashMap大小的两倍的bucket数组，来重新调整map的大小，并将原来的对象放入新的bucket数组中。这个过程叫作rehashing，因为它调用hash方法找到新的bucket位置。</p>
+<h4 id="“你了解重新调整HashMap大小存在什么问题吗？”"><a href="#“你了解重新调整HashMap大小存在什么问题吗？”" class="headerlink" title="“你了解重新调整HashMap大小存在什么问题吗？”"></a>“你了解重新调整HashMap大小存在什么问题吗？”</h4><p>当重新调整HashMap大小的时候，确实存在条件竞争，因为如果两个线程都发现HashMap需要重新调整大小了，它们会同时试着调整大小。在调整大小的过程中，存储在LinkedList中的元素的次序会反过来，因为移动到新的bucket位置的时候，HashMap并不会将元素放在LinkedList的尾部，而是放在头部，这是为了避免尾部遍历(tail traversing)。如果条件竞争发生了，那么就死循环了。这个时候，你可以质问面试官，为什么这么奇怪，要在多线程的环境下使用HashMap呢？</p>
+<h4 id="ConcurrentHashMap和Hashtable的区别"><a href="#ConcurrentHashMap和Hashtable的区别" class="headerlink" title="ConcurrentHashMap和Hashtable的区别"></a>ConcurrentHashMap和Hashtable的区别</h4><p>Hashtable和ConcurrentHashMap有什么分别呢？它们都可以用于多线程的环境，但是当Hashtable的大小增加到一定的时候，性能会急剧下降，因为迭代时需要被锁定很长的时间。因为ConcurrentHashMap引入了分割(segmentation)，不论它变得多么大，仅仅需要锁定map的某个部分，而其它的线程不需要等到迭代完成才能访问map。简而言之，在迭代的过程中，ConcurrentHashMap仅仅锁定map的某个部分，而Hashtable则会锁定整个map。</p>
+<h4 id="HashMap不是线程安全的，你怎么理解线程安全。原理是什么？几种方式避免线程安全的问题。"><a href="#HashMap不是线程安全的，你怎么理解线程安全。原理是什么？几种方式避免线程安全的问题。" class="headerlink" title="HashMap不是线程安全的，你怎么理解线程安全。原理是什么？几种方式避免线程安全的问题。"></a>HashMap不是线程安全的，你怎么理解线程安全。原理是什么？几种方式避免线程安全的问题。</h4><p>线程安全就是多个线程去访问的时候，会对对象造成不是预期的结果，一般要加锁才能线程安全。<br>//TODO</p>
+<h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><ul>
+<li><em><a href="http://www.cnblogs.com/zywu/p/5753736.html" target="_blank" rel="external">http://www.cnblogs.com/zywu/p/5753736.html</a></em></li>
+<li><em><a href="http://www.cnblogs.com/wuhuangdi/p/4175991.html" target="_blank" rel="external">Java基础系列之(三) - HashMap深度分析 http://www.cnblogs.com/wuhuangdi/p/4175991.html</a></em></li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Java/" rel="tag"># Java</a>
+          
+            <a href="/tags/HashMap/" rel="tag"># HashMap</a>
+          
+            <a href="/tags/面试题/" rel="tag"># 面试题</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/07/12/HashMap-源码阅读/" rel="next" title="HashMap 源码阅读">
+                <i class="fa fa-chevron-left"></i> HashMap 源码阅读
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -340,6 +527,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -359,8 +550,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.jpeg"
@@ -447,6 +647,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#“你知道HashMap的工作原理吗？”-“你知道HashMap的get-方法的工作原理吗？”"><span class="nav-number">1.</span> <span class="nav-text">“你知道HashMap的工作原理吗？” “你知道HashMap的get()方法的工作原理吗？”</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#“当两个对象的hashcode相同会发生什么？”"><span class="nav-number">2.</span> <span class="nav-text">“当两个对象的hashcode相同会发生什么？”</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#“如果两个键的hashcode相同，你如何获取值对象？”"><span class="nav-number">3.</span> <span class="nav-text">“如果两个键的hashcode相同，你如何获取值对象？”</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#“如果HashMap的大小超过了负载因子-load-factor-定义的容量，怎么办？”"><span class="nav-number">4.</span> <span class="nav-text">“如果HashMap的大小超过了负载因子(load factor)定义的容量，怎么办？”</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#“你了解重新调整HashMap大小存在什么问题吗？”"><span class="nav-number">5.</span> <span class="nav-text">“你了解重新调整HashMap大小存在什么问题吗？”</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ConcurrentHashMap和Hashtable的区别"><span class="nav-number">6.</span> <span class="nav-text">ConcurrentHashMap和Hashtable的区别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HashMap不是线程安全的，你怎么理解线程安全。原理是什么？几种方式避免线程安全的问题。"><span class="nav-number">7.</span> <span class="nav-text">HashMap不是线程安全的，你怎么理解线程安全。原理是什么？几种方式避免线程安全的问题。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#参考"><span class="nav-number">8.</span> <span class="nav-text">参考</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -560,10 +776,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
